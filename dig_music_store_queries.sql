@@ -1,7 +1,7 @@
 -- Questions & Queries 
 
 -- Q1. Who are the 5 most popular artists? 
---     We can define most popular artist as the artist with most quantity of tracks bought. 
+--     We can define the most popular artist as the artist with the most quantity of tracks bought. 
 
 SELECT ar.name AS artist_name, COUNT(il.quantity) AS total_tracks_bought 
 FROM artist ar
@@ -15,8 +15,8 @@ GROUP BY ar.name
 ORDER BY total_tracks_bought DESC
 LIMIT 5; 	
 
--- Q2. What is the 10 most popular songs and from what genres? 
---     We can define most popular songs as the tracks that were bought the most. 
+-- Q2. What are the 10 most popular songs and their genres? 
+--     We can define the most popular songs as the tracks that were bought the most. 
 
 SELECT t.name AS track_name, COUNT(il.quantity) AS total_tracks_bought, g.name AS genre_name
 FROM invoice_line il
@@ -39,7 +39,7 @@ FROM invoice_line il
 GROUP BY g.name
 ORDER BY avg_price DESC; 
 
--- Q4. What countries made the most money for music purchases? 
+-- Q4. Which countries made the most money from music purchases? 
 
 SELECT billing_country, ROUND(SUM(total):: numeric, 2) AS total_rev
 FROM invoice
