@@ -159,7 +159,7 @@ FROM customer c
 GROUP BY customer_name, ar.name
 ORDER BY total_spent DESC;
 
--- Q15. We want to find out the most popular music Genre for each country. 
+-- Q15. We want to find out the most popular music genre for each country. 
 --      We determine the most popular genre as the genre with the highest amount of purchases. 
 --      Write a query that returns each country along with the top Genre. 
 --      For countries where the maximum number of purchases is shared return all Genres.
