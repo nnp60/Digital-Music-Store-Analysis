@@ -140,7 +140,7 @@ FROM track
 WHERE milliseconds > (SELECT AVG(milliseconds) FROM track)
 ORDER by milliseconds DESC; 
 
--- Q14. Find the amount spent by each customer on artists. 
+-- Q14. Find the amount is spent by each customer on artists. 
 --      Write a query to return the customer name, artist name, and total spent.
 
 SELECT c.first_name || ' ' || c.last_name AS customer_name, ar.name, 
