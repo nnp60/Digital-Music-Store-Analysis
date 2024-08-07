@@ -56,5 +56,12 @@ Based on what is known from our analysis, this is what I would explore further.
   2. Figure out diverse buying options for customers: 
      - How can the music store drive revenue at a larger, more efficient scale?
      - Tracks look like they are only being bought individually. See if the music store is open to bulk options such as buying an artist's entire album at a discounted price - maybe more customers get in on this.
+    
+## Visualization
+I took some of the analysis from the queried SQL result sets to visually showcase the following relationships:
+  1. Geographical positioning of total music store revenue across the world by country (USA and Canada claimed gold and silver respectfully)
+  2. Sales breakdown based on billing city and filtered for the most common genre of songs as well (Prague is really reeling in customers)
+  3. Popular genres among all tracks bought in the music store by customers (Rock was the most popular)
+  4. Artists popularity based on the number of tracks bought by customers for each artist (Queen and Jimi Hendrix reigned supreme) 
 
 
